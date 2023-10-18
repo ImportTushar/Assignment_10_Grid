@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .parent{
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 250px);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .child1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .child3{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .child6{
+            grid-column-start: 3;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1">
+            <img src="./chirayu-sharma-HKk8Yc4XZfU-unsplash.jpg" alt="chirag">
+        </div>
+        <div class="child child2">
+            <img src="./chirayu-sharma-HKk8Yc4XZfU-unsplash.jpg" alt="chirag">
+        </div>
+        <div class="child child3">
+            <img src="./chirayu-sharma-HKk8Yc4XZfU-unsplash.jpg" alt="chirayu">
+        </div>
+        <div class="child child4">
+            <img src="./chirayu-sharma-HKk8Yc4XZfU-unsplash.jpg" alt="chirag">
+        </div>
+        <div class="child child5">
+            <img src="./chirayu-sharma-HKk8Yc4XZfU-unsplash.jpg" alt="chirag">
+        </div>
+        <div class="child child6">
+            <img src="./chirayu-sharma-HKk8Yc4XZfU-unsplash.jpg" alt="chirag">
+        </div>
+    </div>
+</body>
+</html>
